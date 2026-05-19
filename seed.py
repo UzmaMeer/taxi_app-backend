@@ -232,38 +232,38 @@ IMAGE_MCQS = [
 VIDEO_MCQS = [
     {
         "category": "video",
-        "question": "Watch the scene carefully. What dangerous behavior is the driver showing?",
+        "question": "What dangerous behavior is shown?",
         "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
         "correct_answer": "Distracted driving due to mobile usage",
-        "media_url": "/static/images/video_q1.png"
+        "image_url": "/static/images/video_q1.png"
     },
     {
         "category": "video",
-        "question": "Observe the road situation. What should the driver do immediately?",
-        "options": ["Increase speed", "Ignore the pedestrian", "Apply brakes safely", "Use horn continuously"],
+        "question": "What should the driver do immediately?",
+        "options": ["Increase speed", "Ignore the child", "Apply brakes safely", "Use horn continuously"],
         "correct_answer": "Apply brakes safely",
-        "media_url": "/static/images/video_q2.png"
+        "image_url": "/static/images/video_q2.png"
     },
     {
         "category": "video",
-        "question": "Look at the passenger's behavior. What is the best professional response?",
+        "question": "What is the best professional response?",
         "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
         "correct_answer": "Stay calm and communicate politely",
-        "media_url": "/static/images/video_q3.png"
+        "image_url": "/static/images/video_q3.png"
     },
     {
         "category": "video",
-        "question": "Observe the weather and road conditions. What is the safest driving action?",
+        "question": "What is safest driving action?",
         "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
         "correct_answer": "Maintain slow speed and focus",
-        "media_url": "/static/images/video_q4.png"
+        "image_url": "/static/images/video_q4.png"
     },
     {
         "category": "video",
-        "question": "Watch the driver closely. What risk is being shown?",
+        "question": "What risk is shown?",
         "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
         "correct_answer": "Driver fatigue risk",
-        "media_url": "/static/images/video_q5.png"
+        "image_url": "/static/images/video_q5.png"
     }
 ]
 
