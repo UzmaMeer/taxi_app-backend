@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: driveiq-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      # You MUST add MONGODB_URI in the Render dashboard manually
+      - key: MONGODB_URI
+        sync: false
