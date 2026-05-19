@@ -235,35 +235,35 @@ VIDEO_MCQS = [
         "question": "What dangerous behavior is shown?",
         "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
         "correct_answer": "Distracted driving due to mobile usage",
-        "image_url": f"{BACKEND_URL}/static/images/video_q1.gif"
+        "image_url": f"{BACKEND_URL}/static/videos/video_q1.mp4"
     },
     {
         "category": "video",
         "question": "What should the driver do immediately?",
         "options": ["Increase speed", "Ignore the child", "Apply brakes safely", "Use horn continuously"],
         "correct_answer": "Apply brakes safely",
-        "image_url": f"{BACKEND_URL}/static/images/video_q2.gif"
+        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4"
     },
     {
         "category": "video",
         "question": "What is the best professional response?",
         "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
         "correct_answer": "Stay calm and communicate politely",
-        "image_url": f"{BACKEND_URL}/static/images/video_q3.gif"
+        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4"
     },
     {
         "category": "video",
         "question": "What is safest driving action?",
         "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
         "correct_answer": "Maintain slow speed and focus",
-        "image_url": f"{BACKEND_URL}/static/images/video_q4.gif"
+        "image_url": f"{BACKEND_URL}/static/videos/video_q4.mp4"
     },
     {
         "category": "video",
         "question": "What risk is shown?",
         "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
         "correct_answer": "Driver fatigue risk",
-        "image_url": f"{BACKEND_URL}/static/images/video_q5.gif"
+        "image_url": f"{BACKEND_URL}/static/videos/video_q5.mp4"
     }
 ]
 
