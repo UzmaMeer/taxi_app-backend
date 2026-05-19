@@ -34,14 +34,14 @@ def generate_audio_files():
     for filename, text in audio_questions.items():
         filepath = os.path.join(AUDIO_DIR, f"{filename}.mp3")
         if os.path.exists(filepath):
-            print(f"  ⏭  Audio already exists: {filename}.mp3")
+            print(f"  [SKIP] Audio already exists: {filename}.mp3")
             continue
-        print(f"  🎙  Generating audio: {filename}.mp3 ...")
+        print(f"  [GEN] Generating audio: {filename}.mp3 ...")
         tts = gTTS(text=text, lang="en", slow=False)
         tts.save(filepath)
-        print(f"  ✅  Saved: {filepath}")
+        print(f"  [OK] Saved: {filepath}")
 
-    print("\n🎧 All audio files generated!\n")
+    print("\n[AUDIO] All audio files generated!\n")
 
 
 # ─────────────────────── MCQ DATA ────────────────────────────────
@@ -235,35 +235,35 @@ VIDEO_MCQS = [
         "question": "What dangerous behavior is shown?",
         "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
         "correct_answer": "Distracted driving due to mobile usage",
-        "image_url": f"{BACKEND_URL}/static/images/video_q1.png"
+        "image_url": f"{BACKEND_URL}/static/images/video_q1.gif"
     },
     {
         "category": "video",
         "question": "What should the driver do immediately?",
         "options": ["Increase speed", "Ignore the child", "Apply brakes safely", "Use horn continuously"],
         "correct_answer": "Apply brakes safely",
-        "image_url": f"{BACKEND_URL}/static/images/video_q2.png"
+        "image_url": f"{BACKEND_URL}/static/images/video_q2.gif"
     },
     {
         "category": "video",
         "question": "What is the best professional response?",
         "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
         "correct_answer": "Stay calm and communicate politely",
-        "image_url": f"{BACKEND_URL}/static/images/video_q3.png"
+        "image_url": f"{BACKEND_URL}/static/images/video_q3.gif"
     },
     {
         "category": "video",
         "question": "What is safest driving action?",
         "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
         "correct_answer": "Maintain slow speed and focus",
-        "image_url": f"{BACKEND_URL}/static/images/video_q4.png"
+        "image_url": f"{BACKEND_URL}/static/images/video_q4.gif"
     },
     {
         "category": "video",
         "question": "What risk is shown?",
         "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
         "correct_answer": "Driver fatigue risk",
-        "image_url": f"{BACKEND_URL}/static/images/video_q5.png"
+        "image_url": f"{BACKEND_URL}/static/images/video_q5.gif"
     }
 ]
 
@@ -274,29 +274,29 @@ async def seed_database():
     client = AsyncIOMotorClient(MONGODB_URI)
     db = client[DB_NAME]
 
-    print("🗑  Clearing existing MCQ collections...")
+    print("[DB] Clearing existing MCQ collections...")
     await db.text_mcqs.delete_many({})
     await db.audio_mcqs.delete_many({})
     await db.image_mcqs.delete_many({})
     await db.video_mcqs.delete_many({})
 
-    print("📝 Inserting text MCQs...")
+    print("[DB] Inserting text MCQs...")
     result = await db.text_mcqs.insert_many(TEXT_MCQS)
-    print(f"   ✅ Inserted {len(result.inserted_ids)} text MCQs")
+    print(f"   [OK] Inserted {len(result.inserted_ids)} text MCQs")
 
-    print("🎧 Inserting audio MCQs...")
+    print("[DB] Inserting audio MCQs...")
     result = await db.audio_mcqs.insert_many(AUDIO_MCQS)
-    print(f"   ✅ Inserted {len(result.inserted_ids)} audio MCQs")
+    print(f"   [OK] Inserted {len(result.inserted_ids)} audio MCQs")
 
-    print("🖼  Inserting image MCQs...")
+    print("[DB] Inserting image MCQs...")
     result = await db.image_mcqs.insert_many(IMAGE_MCQS)
-    print(f"   ✅ Inserted {len(result.inserted_ids)} image MCQs")
+    print(f"   [OK] Inserted {len(result.inserted_ids)} image MCQs")
 
-    print("🎬 Inserting video MCQs...")
+    print("[DB] Inserting video MCQs...")
     result = await db.video_mcqs.insert_many(VIDEO_MCQS)
-    print(f"   ✅ Inserted {len(result.inserted_ids)} video MCQs")
+    print(f"   [OK] Inserted {len(result.inserted_ids)} video MCQs")
 
-    print("\n🎉 Database seeded successfully!")
+    print("\n[DB] Database seeded successfully!")
     print(f"   Total MCQs: {len(TEXT_MCQS) + len(AUDIO_MCQS) + len(IMAGE_MCQS) + len(VIDEO_MCQS)}")
 
     client.close()
@@ -305,7 +305,7 @@ async def seed_database():
 # ─────────────────────── MAIN ────────────────────────────────────
 if __name__ == "__main__":
     print("=" * 55)
-    print("  🚗 AntiGravity — Database Seed Script")
+    print("  [DRIVEIQ] AntiGravity -- Database Seed Script")
     print("=" * 55)
     print()
 
@@ -317,6 +317,6 @@ if __name__ == "__main__":
 
     print()
     print("=" * 55)
-    print("  ✅ Seeding complete! Start the server with:")
+    print("  [OK] Seeding complete! Start the server with:")
     print("     uvicorn main:app --reload --port 8000")
     print("=" * 55)
