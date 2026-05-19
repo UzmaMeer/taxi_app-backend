@@ -59,7 +59,7 @@ async def get_all_mcqs():
     db = get_database()
     all_mcqs = []
 
-    for collection_name in ["text_mcqs", "audio_mcqs", "image_mcqs"]:
+    for collection_name in ["text_mcqs", "audio_mcqs", "image_mcqs", "video_mcqs"]:
         cursor = db[collection_name].find()
         docs = await cursor.to_list(length=100)
         all_mcqs.extend([_format_mcq(d) for d in docs])

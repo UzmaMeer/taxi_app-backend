@@ -14,6 +14,7 @@ COLLECTION_MAP = {
     "text": "text_mcqs",
     "audio": "audio_mcqs",
     "image": "image_mcqs",
+    "video": "video_mcqs",
 }
 
 
@@ -52,6 +53,7 @@ async def submit_answers(payload: SubmitAnswersRequest):
         "text": {"correct": 0, "total": 0},
         "audio": {"correct": 0, "total": 0},
         "image": {"correct": 0, "total": 0},
+        "video": {"correct": 0, "total": 0},
     }
 
     for answer in payload.answers:

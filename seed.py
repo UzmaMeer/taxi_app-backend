@@ -229,6 +229,44 @@ IMAGE_MCQS = [
     },
 ]
 
+VIDEO_MCQS = [
+    {
+        "category": "video",
+        "question": "What dangerous behavior is shown?",
+        "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
+        "correct_answer": "Distracted driving due to mobile usage",
+        "image_url": "/static/images/video_q1.png"
+    },
+    {
+        "category": "video",
+        "question": "What should the driver do immediately?",
+        "options": ["Increase speed", "Ignore the child", "Apply brakes safely", "Use horn continuously"],
+        "correct_answer": "Apply brakes safely",
+        "image_url": "/static/images/video_q2.png"
+    },
+    {
+        "category": "video",
+        "question": "What is the best professional response?",
+        "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
+        "correct_answer": "Stay calm and communicate politely",
+        "image_url": "/static/images/video_q3.png"
+    },
+    {
+        "category": "video",
+        "question": "What is safest driving action?",
+        "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
+        "correct_answer": "Maintain slow speed and focus",
+        "image_url": "/static/images/video_q4.png"
+    },
+    {
+        "category": "video",
+        "question": "What risk is shown?",
+        "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
+        "correct_answer": "Driver fatigue risk",
+        "image_url": "/static/images/video_q5.png"
+    }
+]
+
 
 # ─────────────────────── DATABASE SEEDING ────────────────────────
 async def seed_database():
@@ -240,6 +278,7 @@ async def seed_database():
     await db.text_mcqs.delete_many({})
     await db.audio_mcqs.delete_many({})
     await db.image_mcqs.delete_many({})
+    await db.video_mcqs.delete_many({})
 
     print("📝 Inserting text MCQs...")
     result = await db.text_mcqs.insert_many(TEXT_MCQS)
@@ -253,8 +292,12 @@ async def seed_database():
     result = await db.image_mcqs.insert_many(IMAGE_MCQS)
     print(f"   ✅ Inserted {len(result.inserted_ids)} image MCQs")
 
+    print("🎬 Inserting video MCQs...")
+    result = await db.video_mcqs.insert_many(VIDEO_MCQS)
+    print(f"   ✅ Inserted {len(result.inserted_ids)} video MCQs")
+
     print("\n🎉 Database seeded successfully!")
-    print(f"   Total MCQs: {len(TEXT_MCQS) + len(AUDIO_MCQS) + len(IMAGE_MCQS)}")
+    print(f"   Total MCQs: {len(TEXT_MCQS) + len(AUDIO_MCQS) + len(IMAGE_MCQS) + len(VIDEO_MCQS)}")
 
     client.close()
 
