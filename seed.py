@@ -247,33 +247,33 @@ VIDEO_MCQS = [
     },
     {
         "category": "video",
-        "question": "What is the correct emergency response when a passenger experiences a sudden serious illness or medical emergency?",
+        "question": "What should the driver do immediately when a pedestrian unexpectedly enters the active driving lane?",
         "options": [
-            "Continue driving to original destination to avoid losing fare progress",
-            "Safely pull over immediately, turn on hazard lights, check on the passenger, and call emergency services (911/ambulance)",
-            "Hand the passenger a water bottle and tell them to wait until the trip ends",
-            "Drive as fast as possible through traffic signals directly to the nearest hospital"
+            "Speed up to quickly clear the crossing space",
+            "Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
+            "Sound the horn loudly and continue driving at normal speed",
+            "Swerve immediately into the opposite lane to bypass the child"
         ],
-        "correct_answer": "Safely pull over immediately, turn on hazard lights, check on the passenger, and call emergency services (911/ambulance)",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4",
-        "video_description": "An elderly passenger suddenly clutches their chest, breathing heavily, and exhibits signs of a sudden medical emergency in the backseat of the vehicle.",
+        "correct_answer": "Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4",
+        "video_description": "A child suddenly runs out from between parked vehicles to cross the street without checking traffic.",
         "difficulty": "Hard",
         "behavioral_category": "Emergency Handling"
     },
     {
         "category": "video",
-        "question": "How should a professional driver respond when an emergency vehicle (ambulance/fire truck) with active sirens is approaching behind them?",
+        "question": "What is the most professional behavioral response when dealing with an aggressive or shouting passenger?",
         "options": [
-            "Speed up and try to stay ahead of the emergency vehicle to clear the lane",
-            "Safely yield, move to the left or right edge of the road, and come to a complete stop to let it pass safely",
-            "Maintain your current speed and lane to avoid causing traffic congestion",
-            "Stop immediately in the middle of your active lane"
+            "Shout back at the passenger to establish authority",
+            "Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
+            "Stop the vehicle in the middle of traffic and refuse to move",
+            "Ignore the passenger completely and drive at high speed"
         ],
-        "correct_answer": "Safely yield, move to the left or right edge of the road, and come to a complete stop to let it pass safely",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4",
-        "video_description": "An emergency ambulance with flashing lights and sirens is approaching rapidly from behind in heavy traffic.",
+        "correct_answer": "Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4",
+        "video_description": "An upset passenger in the backseat starts speaking loudly and shouting aggressively at the driver about the route choice.",
         "difficulty": "Medium",
-        "behavioral_category": "Traffic Compliance"
+        "behavioral_category": "Passenger Management"
     },
     {
         "category": "video",
@@ -292,18 +292,18 @@ VIDEO_MCQS = [
     },
     {
         "category": "video",
-        "question": "What is the best professional response when faced with aggressive road rage or close tailgating from another driver?",
+        "question": "What primary risk is demonstrated in this scene, and what is the best professional response?",
         "options": [
-            "Tap your brakes suddenly to warn them to back off",
-            "Stay calm, avoid eye contact, maintain a safe speed, and allow them to pass safely at the earliest opportunity",
-            "Gesture back angrily and block them from overtaking you",
-            "Accelerate rapidly to match their speed and keep distance"
+            "Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
+            "Standard boredom; drink coffee while maintaining driving speed",
+            "Normal night driving alertness",
+            "Turn on loud music to prevent yawning"
         ],
-        "correct_answer": "Stay calm, avoid eye contact, maintain a safe speed, and allow them to pass safely at the earliest opportunity",
+        "correct_answer": "Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
         "image_url": f"{BACKEND_URL}/static/videos/video_q5.mp4",
-        "video_description": "Another aggressive driver behind you is tailgating closely, flashing headlights, and expressing intense road rage.",
-        "difficulty": "Medium",
-        "behavioral_category": "Aggression Control"
+        "video_description": "The driver looks highly fatigued, rubbing eyes and yawning heavily while driving in the late evening.",
+        "difficulty": "Easy",
+        "behavioral_category": "Fatigue Monitoring"
     }
 ]
 
