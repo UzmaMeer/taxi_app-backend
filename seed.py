@@ -234,12 +234,12 @@ VIDEO_MCQS = [
         "category": "video",
         "question": "What dangerous behavior is shown in this video scenario, and how should a professional driver manage it?",
         "options": [
-            "A. Sending a fast text since traffic is moving slowly",
-            "B. Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
-            "C. Proper seatbelt usage and driving technique",
-            "D. Keep phone held in hand for immediate warning signals"
+            "Sending a fast text since traffic is moving slowly",
+            "Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
+            "Proper seatbelt usage and driving technique",
+            "Keep phone held in hand for immediate warning signals"
         ],
-        "correct_answer": "B. Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
+        "correct_answer": "Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
         "image_url": f"{BACKEND_URL}/static/videos/video_q1.mp4",
         "video_description": "The taxi driver is checking navigation and sending a quick message on a mobile phone while cruising down a busy urban street.",
         "difficulty": "Medium",
@@ -247,44 +247,44 @@ VIDEO_MCQS = [
     },
     {
         "category": "video",
-        "question": "What should the driver do immediately when a pedestrian unexpectedly enters the active driving lane?",
+        "question": "What is the correct emergency response when a passenger experiences a sudden serious illness or medical emergency?",
         "options": [
-            "A. Speed up to quickly clear the crossing space",
-            "B. Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
-            "C. Sound the horn loudly and continue driving at normal speed",
-            "D. Swerve immediately into the opposite lane to bypass the child"
+            "Continue driving to original destination to avoid losing fare progress",
+            "Safely pull over immediately, turn on hazard lights, check on the passenger, and call emergency services (911/ambulance)",
+            "Hand the passenger a water bottle and tell them to wait until the trip ends",
+            "Drive as fast as possible through traffic signals directly to the nearest hospital"
         ],
-        "correct_answer": "B. Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4",
-        "video_description": "A child suddenly runs out from between parked vehicles to cross the street without checking traffic.",
+        "correct_answer": "Safely pull over immediately, turn on hazard lights, check on the passenger, and call emergency services (911/ambulance)",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4",
+        "video_description": "An elderly passenger suddenly clutches their chest, breathing heavily, and exhibits signs of a sudden medical emergency in the backseat of the vehicle.",
         "difficulty": "Hard",
         "behavioral_category": "Emergency Handling"
     },
     {
         "category": "video",
-        "question": "What is the most professional behavioral response when dealing with an aggressive or shouting passenger?",
+        "question": "How should a professional driver respond when an emergency vehicle (ambulance/fire truck) with active sirens is approaching behind them?",
         "options": [
-            "A. Shout back at the passenger to establish authority",
-            "B. Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
-            "C. Stop the vehicle in the middle of traffic and refuse to move",
-            "D. Ignore the passenger completely and drive at high speed"
+            "Speed up and try to stay ahead of the emergency vehicle to clear the lane",
+            "Safely yield, move to the left or right edge of the road, and come to a complete stop to let it pass safely",
+            "Maintain your current speed and lane to avoid causing traffic congestion",
+            "Stop immediately in the middle of your active lane"
         ],
-        "correct_answer": "B. Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4",
-        "video_description": "An upset passenger in the backseat starts speaking loudly and shouting aggressively at the driver about the route choice.",
+        "correct_answer": "Safely yield, move to the left or right edge of the road, and come to a complete stop to let it pass safely",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4",
+        "video_description": "An emergency ambulance with flashing lights and sirens is approaching rapidly from behind in heavy traffic.",
         "difficulty": "Medium",
-        "behavioral_category": "Passenger Management"
+        "behavioral_category": "Traffic Compliance"
     },
     {
         "category": "video",
         "question": "What is the safest tactical driving action during heavy rain or slippery road conditions?",
         "options": [
-            "A. Speed up to reach the destination quickly before road flooding worsens",
-            "B. Reduce speed, double the following distance, and keep low-beam headlights on",
-            "C. Maintain speed and tail the car in front closely to follow its track",
-            "D. Turn off lights to avoid glare and keep standard speed"
+            "Speed up to reach the destination quickly before road flooding worsens",
+            "Reduce speed, double the following distance, and keep low-beam headlights on",
+            "Maintain speed and tail the car in front closely to follow its track",
+            "Turn off lights to avoid glare and keep standard speed"
         ],
-        "correct_answer": "B. Reduce speed, double the following distance, and keep low-beam headlights on",
+        "correct_answer": "Reduce speed, double the following distance, and keep low-beam headlights on",
         "image_url": f"{BACKEND_URL}/static/videos/video_q4.mp4",
         "video_description": "Heavy torrential rain is pouring down on the road, severely reducing visibility and road traction.",
         "difficulty": "Easy",
@@ -292,18 +292,18 @@ VIDEO_MCQS = [
     },
     {
         "category": "video",
-        "question": "What primary risk is demonstrated in this scene, and what is the best professional response?",
+        "question": "What is the best professional response when faced with aggressive road rage or close tailgating from another driver?",
         "options": [
-            "A. Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
-            "B. Standard boredom; drink coffee while maintaining driving speed",
-            "C. Normal night driving alertness",
-            "D. Turn on loud music to prevent yawning"
+            "Tap your brakes suddenly to warn them to back off",
+            "Stay calm, avoid eye contact, maintain a safe speed, and allow them to pass safely at the earliest opportunity",
+            "Gesture back angrily and block them from overtaking you",
+            "Accelerate rapidly to match their speed and keep distance"
         ],
-        "correct_answer": "A. Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
+        "correct_answer": "Stay calm, avoid eye contact, maintain a safe speed, and allow them to pass safely at the earliest opportunity",
         "image_url": f"{BACKEND_URL}/static/videos/video_q5.mp4",
-        "video_description": "The driver looks highly fatigued, rubbing eyes and yawning heavily while driving in the late evening.",
-        "difficulty": "Easy",
-        "behavioral_category": "Fatigue Monitoring"
+        "video_description": "Another aggressive driver behind you is tailgating closely, flashing headlights, and expressing intense road rage.",
+        "difficulty": "Medium",
+        "behavioral_category": "Aggression Control"
     }
 ]
 
