@@ -39,6 +39,9 @@ class MCQResponse(BaseModel):
     options: List[str]
     category: str
     media_url: Optional[str] = None
+    video_description: Optional[str] = None
+    difficulty: Optional[str] = None
+    behavioral_category: Optional[str] = None
 
 
 # ─── Test Submission ─────────────────────────────────────────

@@ -20,6 +20,9 @@ def _format_mcq(doc: dict) -> dict:
         "options": doc["options"],
         "category": doc["category"],
         "media_url": media_url,
+        "video_description": doc.get("video_description"),
+        "difficulty": doc.get("difficulty"),
+        "behavioral_category": doc.get("behavioral_category"),
     }
 
 

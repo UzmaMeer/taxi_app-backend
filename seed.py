@@ -232,38 +232,78 @@ IMAGE_MCQS = [
 VIDEO_MCQS = [
     {
         "category": "video",
-        "question": "What dangerous behavior is shown?",
-        "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
-        "correct_answer": "Distracted driving due to mobile usage",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q1.mp4"
+        "question": "What dangerous behavior is shown in this video scenario, and how should a professional driver manage it?",
+        "options": [
+            "A. Sending a fast text since traffic is moving slowly",
+            "B. Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
+            "C. Proper seatbelt usage and driving technique",
+            "D. Keep phone held in hand for immediate warning signals"
+        ],
+        "correct_answer": "B. Distracted driving due to mobile usage; pull over to a safe spot if checking navigation is urgent",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q1.mp4",
+        "video_description": "The taxi driver is checking navigation and sending a quick message on a mobile phone while cruising down a busy urban street.",
+        "difficulty": "Medium",
+        "behavioral_category": "Safety Awareness"
     },
     {
         "category": "video",
-        "question": "What should the driver do immediately?",
-        "options": ["Increase speed", "Ignore the child", "Apply brakes safely", "Use horn continuously"],
-        "correct_answer": "Apply brakes safely",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4"
+        "question": "What should the driver do immediately when a pedestrian unexpectedly enters the active driving lane?",
+        "options": [
+            "A. Speed up to quickly clear the crossing space",
+            "B. Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
+            "C. Sound the horn loudly and continue driving at normal speed",
+            "D. Swerve immediately into the opposite lane to bypass the child"
+        ],
+        "correct_answer": "B. Apply brakes immediately and safely while keeping a firm grip on the steering wheel",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q2.mp4",
+        "video_description": "A child suddenly runs out from between parked vehicles to cross the street without checking traffic.",
+        "difficulty": "Hard",
+        "behavioral_category": "Emergency Handling"
     },
     {
         "category": "video",
-        "question": "What is the best professional response?",
-        "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
-        "correct_answer": "Stay calm and communicate politely",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4"
+        "question": "What is the most professional behavioral response when dealing with an aggressive or shouting passenger?",
+        "options": [
+            "A. Shout back at the passenger to establish authority",
+            "B. Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
+            "C. Stop the vehicle in the middle of traffic and refuse to move",
+            "D. Ignore the passenger completely and drive at high speed"
+        ],
+        "correct_answer": "B. Stay calm, speak in a polite tone, and pull over safely if safety is compromised",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q3.mp4",
+        "video_description": "An upset passenger in the backseat starts speaking loudly and shouting aggressively at the driver about the route choice.",
+        "difficulty": "Medium",
+        "behavioral_category": "Passenger Management"
     },
     {
         "category": "video",
-        "question": "What is safest driving action?",
-        "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
-        "correct_answer": "Maintain slow speed and focus",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q4.mp4"
+        "question": "What is the safest tactical driving action during heavy rain or slippery road conditions?",
+        "options": [
+            "A. Speed up to reach the destination quickly before road flooding worsens",
+            "B. Reduce speed, double the following distance, and keep low-beam headlights on",
+            "C. Maintain speed and tail the car in front closely to follow its track",
+            "D. Turn off lights to avoid glare and keep standard speed"
+        ],
+        "correct_answer": "B. Reduce speed, double the following distance, and keep low-beam headlights on",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q4.mp4",
+        "video_description": "Heavy torrential rain is pouring down on the road, severely reducing visibility and road traction.",
+        "difficulty": "Easy",
+        "behavioral_category": "Traffic Compliance"
     },
     {
         "category": "video",
-        "question": "What risk is shown?",
-        "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
-        "correct_answer": "Driver fatigue risk",
-        "image_url": f"{BACKEND_URL}/static/videos/video_q5.mp4"
+        "question": "What primary risk is demonstrated in this scene, and what is the best professional response?",
+        "options": [
+            "A. Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
+            "B. Standard boredom; drink coffee while maintaining driving speed",
+            "C. Normal night driving alertness",
+            "D. Turn on loud music to prevent yawning"
+        ],
+        "correct_answer": "A. Driver fatigue risk; stop at the nearest safe rest area to rest and recover",
+        "image_url": f"{BACKEND_URL}/static/videos/video_q5.mp4",
+        "video_description": "The driver looks highly fatigued, rubbing eyes and yawning heavily while driving in the late evening.",
+        "difficulty": "Easy",
+        "behavioral_category": "Fatigue Monitoring"
     }
 ]
 
