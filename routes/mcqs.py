@@ -11,6 +11,9 @@ router = APIRouter(prefix="/api/mcqs", tags=["MCQs"])
 def _format_mcq(doc: dict) -> dict:
     """Transform a MongoDB document into a frontend-safe MCQ response."""
     media_url = doc.get("audio_url") or doc.get("image_url") or None
+    if media_url and "static/" in media_url:
+        parts = media_url.split("static/")
+        media_url = "/static/" + parts[-1]
     return {
         "id": str(doc["_id"]),
         "question": doc["question"],
