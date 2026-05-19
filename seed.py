@@ -235,35 +235,35 @@ VIDEO_MCQS = [
         "question": "Watch the scene carefully. What dangerous behavior is the driver showing?",
         "options": ["Safe communication", "Distracted driving due to mobile usage", "Proper driving technique", "Navigation checking"],
         "correct_answer": "Distracted driving due to mobile usage",
-        "media_url": "/static/videos/video_q1.mp4"
+        "media_url": "/static/images/video_q1.png"
     },
     {
         "category": "video",
         "question": "Observe the road situation. What should the driver do immediately?",
         "options": ["Increase speed", "Ignore the pedestrian", "Apply brakes safely", "Use horn continuously"],
         "correct_answer": "Apply brakes safely",
-        "media_url": "/static/videos/video_q2.mp4"
+        "media_url": "/static/images/video_q2.png"
     },
     {
         "category": "video",
         "question": "Look at the passenger's behavior. What is the best professional response?",
         "options": ["Argue with passenger", "Stay calm and communicate politely", "Stop in middle of road", "Force passenger out"],
         "correct_answer": "Stay calm and communicate politely",
-        "media_url": "/static/videos/video_q3.mp4"
+        "media_url": "/static/images/video_q3.png"
     },
     {
         "category": "video",
         "question": "Observe the weather and road conditions. What is the safest driving action?",
         "options": ["Drive very fast", "Maintain slow speed and focus", "Ignore road condition", "Turn off headlights"],
         "correct_answer": "Maintain slow speed and focus",
-        "media_url": "/static/videos/video_q4.mp4"
+        "media_url": "/static/images/video_q4.png"
     },
     {
         "category": "video",
         "question": "Watch the driver closely. What risk is being shown?",
         "options": ["Healthy driving", "Driver fatigue risk", "Proper concentration", "Safe long-distance driving"],
         "correct_answer": "Driver fatigue risk",
-        "media_url": "/static/videos/video_q5.mp4"
+        "media_url": "/static/images/video_q5.png"
     }
 ]
 
