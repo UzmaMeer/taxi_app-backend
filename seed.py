@@ -232,78 +232,73 @@ IMAGE_MCQS = [
 VIDEO_MCQS = [
     {
         "category": "video",
-        "question": "What unsafe behavior do you observe, and what should the driver do to correct it?",
+        "question": "What unsafe behavior do you observe in this clip?",
         "options": [
-            "The driver is navigating safely; no action needed",
-            "The driver is distracted by texting; they must put the phone away immediately and focus entirely on the road",
-            "Using a phone in slow traffic is acceptable if the driver glances up frequently",
-            "The driver should hold the phone higher so they can see both the screen and road"
+            "The driver is navigating safely",
+            "The driver is distracted by using a mobile phone",
+            "Using a phone in slow traffic is acceptable",
+            "The driver is checking the GPS properly"
         ],
-        "correct_answer": "The driver is distracted by texting; they must put the phone away immediately and focus entirely on the road",
+        "correct_answer": "The driver is distracted by using a mobile phone",
         "image_url": f"{BACKEND_URL}/static/images/video_q1.gif",
-        "video_description": "Driver is texting on a mobile phone while driving in busy traffic, eyes repeatedly leaving the road.",
         "difficulty": "Medium",
         "behavioral_category": "Safety Awareness"
     },
     {
         "category": "video",
-        "question": "What critical risk is shown and what is the safest professional response?",
+        "question": "A pedestrian is crossing the road ahead. What should the driver do?",
         "options": [
-            "The driver is well-rested and alert; continue driving normally",
-            "The driver is showing signs of severe fatigue; they must immediately pull over to a safe location and rest before continuing",
-            "Yawning is normal; the driver should open a window and keep driving",
-            "The driver should drink an energy drink and increase speed to reach the destination faster"
+            "Speed up to pass before the pedestrian crosses",
+            "Slow down and let the pedestrian cross safely",
+            "Honk loudly to warn the pedestrian",
+            "Swerve to the other lane without checking"
         ],
-        "correct_answer": "The driver is showing signs of severe fatigue; they must immediately pull over to a safe location and rest before continuing",
+        "correct_answer": "Slow down and let the pedestrian cross safely",
         "image_url": f"{BACKEND_URL}/static/images/video_q2.gif",
-        "video_description": "Driver yawning repeatedly with heavy eyelids closing while driving at night, struggling to stay awake.",
         "difficulty": "Easy",
-        "behavioral_category": "Fatigue Monitoring"
+        "behavioral_category": "Hazard Awareness"
     },
     {
         "category": "video",
-        "question": "What is the correct emergency response in this situation?",
+        "question": "How should the driver handle this aggressive passenger?",
         "options": [
-            "Sound the horn continuously to warn the child and maintain current speed",
-            "Apply emergency brakes firmly and immediately, grip the steering wheel tightly, and check mirrors before swerving",
-            "Swerve sharply into the opposite lane without checking for oncoming traffic",
-            "Flash headlights and accelerate to pass before the child fully enters the lane"
+            "Shout back at the passenger",
+            "Stay calm and speak respectfully",
+            "Stop the car in the middle of the road",
+            "Ignore the passenger and drive faster"
         ],
-        "correct_answer": "Apply emergency brakes firmly and immediately, grip the steering wheel tightly, and check mirrors before swerving",
+        "correct_answer": "Stay calm and speak respectfully",
         "image_url": f"{BACKEND_URL}/static/images/video_q3.gif",
-        "video_description": "A child suddenly dashes across the road from between parked cars, directly in front of the moving vehicle.",
-        "difficulty": "Hard",
-        "behavioral_category": "Emergency Handling"
-    },
-    {
-        "category": "video",
-        "question": "How should a professional driver handle this passenger situation?",
-        "options": [
-            "Shout back at the passenger to assert control of the situation",
-            "Stay completely calm, speak in a respectful tone, and if the situation escalates pull over safely and request the passenger to exit",
-            "Ignore the passenger entirely and drive aggressively to end the trip quickly",
-            "Stop the vehicle immediately in the middle of the road and refuse to continue"
-        ],
-        "correct_answer": "Stay completely calm, speak in a respectful tone, and if the situation escalates pull over safely and request the passenger to exit",
-        "image_url": f"{BACKEND_URL}/static/images/video_q4.gif",
-        "video_description": "An aggressive passenger in the backseat is shouting angrily at the driver, gesturing aggressively about the fare or route.",
         "difficulty": "Medium",
         "behavioral_category": "Emotional Stability"
     },
     {
         "category": "video",
-        "question": "What is the safest driving strategy in these dangerous weather conditions?",
+        "question": "What is the safest action in this heavy rain?",
         "options": [
-            "Increase speed to get through the rain quickly and reduce exposure time",
-            "Reduce speed significantly, increase following distance, turn on low-beam headlights and wipers, and avoid sudden braking or lane changes",
-            "Drive close behind the vehicle ahead to use their tire tracks for better grip",
-            "Turn off all lights to reduce glare and maintain normal cruising speed"
+            "Speed up to get through the rain quickly",
+            "Reduce speed and turn on headlights and wipers",
+            "Drive close behind the car ahead",
+            "Turn off all lights to avoid glare"
         ],
-        "correct_answer": "Reduce speed significantly, increase following distance, turn on low-beam headlights and wipers, and avoid sudden braking or lane changes",
-        "image_url": f"{BACKEND_URL}/static/images/video_q5.gif",
-        "video_description": "Heavy rainstorm with extremely low visibility and slippery road surface, the driver struggles to maintain control.",
-        "difficulty": "Medium",
+        "correct_answer": "Reduce speed and turn on headlights and wipers",
+        "image_url": f"{BACKEND_URL}/static/images/video_q4.gif",
+        "difficulty": "Easy",
         "behavioral_category": "Hazard Awareness"
+    },
+    {
+        "category": "video",
+        "question": "What risk does this driver show?",
+        "options": [
+            "The driver is fully alert and safe",
+            "The driver is showing signs of fatigue and should rest",
+            "Yawning while driving is normal",
+            "The driver should drink coffee and keep going"
+        ],
+        "correct_answer": "The driver is showing signs of fatigue and should rest",
+        "image_url": f"{BACKEND_URL}/static/images/video_q5.gif",
+        "difficulty": "Easy",
+        "behavioral_category": "Fatigue Monitoring"
     }
 ]
 
