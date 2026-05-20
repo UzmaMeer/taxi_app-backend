@@ -2,11 +2,11 @@ import cv2
 import os
 
 images = {
-    "video_q1.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_q1_1779190911977.png",
-    "video_q2.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_q2_1779191016338.png",
-    "video_q3.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_q3_1779190958090.png",
-    "video_q4.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_q4_1779190973542.png",
-    "video_q5.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_q5_1779190990073.png",
+    "video_q1.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_texting_1779207447108.png",
+    "video_q2.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_sleepy_1779207461480.png",
+    "video_q3.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_child_1779207481556.png",
+    "video_q4.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_passenger_1779207494500.png",
+    "video_q5.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_rain_1779207508843.png",
 }
 
 fps = 30
