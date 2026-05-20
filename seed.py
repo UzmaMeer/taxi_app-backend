@@ -240,7 +240,7 @@ VIDEO_MCQS = [
             "The driver should hold the phone higher so they can see both the screen and road"
         ],
         "correct_answer": "The driver is distracted by texting; they must put the phone away immediately and focus entirely on the road",
-        "image_url": f"{BACKEND_URL}/static/images/scene_texting.png",
+        "image_url": f"{BACKEND_URL}/static/images/video_q1.webp",
         "video_description": "Driver is texting on a mobile phone while driving in busy traffic, eyes repeatedly leaving the road.",
         "difficulty": "Medium",
         "behavioral_category": "Safety Awareness"
@@ -255,7 +255,7 @@ VIDEO_MCQS = [
             "The driver should drink an energy drink and increase speed to reach the destination faster"
         ],
         "correct_answer": "The driver is showing signs of severe fatigue; they must immediately pull over to a safe location and rest before continuing",
-        "image_url": f"{BACKEND_URL}/static/images/scene_fatigue.png",
+        "image_url": f"{BACKEND_URL}/static/images/video_q2.webp",
         "video_description": "Driver yawning repeatedly with heavy eyelids closing while driving at night, struggling to stay awake.",
         "difficulty": "Easy",
         "behavioral_category": "Fatigue Monitoring"
@@ -270,7 +270,7 @@ VIDEO_MCQS = [
             "Flash headlights and accelerate to pass before the child fully enters the lane"
         ],
         "correct_answer": "Apply emergency brakes firmly and immediately, grip the steering wheel tightly, and check mirrors before swerving",
-        "image_url": f"{BACKEND_URL}/static/images/scene_child_crossing.png",
+        "image_url": f"{BACKEND_URL}/static/images/video_q3.webp",
         "video_description": "A child suddenly dashes across the road from between parked cars, directly in front of the moving vehicle.",
         "difficulty": "Hard",
         "behavioral_category": "Emergency Handling"
@@ -285,7 +285,7 @@ VIDEO_MCQS = [
             "Stop the vehicle immediately in the middle of the road and refuse to continue"
         ],
         "correct_answer": "Stay completely calm, speak in a respectful tone, and if the situation escalates pull over safely and request the passenger to exit",
-        "image_url": f"{BACKEND_URL}/static/images/scene_angry_passenger.png",
+        "image_url": f"{BACKEND_URL}/static/images/video_q4.webp",
         "video_description": "An aggressive passenger in the backseat is shouting angrily at the driver, gesturing aggressively about the fare or route.",
         "difficulty": "Medium",
         "behavioral_category": "Emotional Stability"
@@ -300,7 +300,7 @@ VIDEO_MCQS = [
             "Turn off all lights to reduce glare and maintain normal cruising speed"
         ],
         "correct_answer": "Reduce speed significantly, increase following distance, turn on low-beam headlights and wipers, and avoid sudden braking or lane changes",
-        "image_url": f"{BACKEND_URL}/static/images/scene_rain_storm.png",
+        "image_url": f"{BACKEND_URL}/static/images/video_q5.webp",
         "video_description": "Heavy rainstorm with extremely low visibility and slippery road surface, the driver struggles to maintain control.",
         "difficulty": "Medium",
         "behavioral_category": "Hazard Awareness"
