@@ -2,11 +2,11 @@ import cv2
 import os
 
 images = {
-    "video_q1.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_texting_1779207447108.png",
-    "video_q2.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_sleepy_1779207461480.png",
-    "video_q3.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_child_1779207481556.png",
-    "video_q4.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_passenger_1779207494500.png",
-    "video_q5.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\video_scene_rain_1779207508843.png",
+    "video_q1.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\driver_texting_hazard_1779257022236.png",
+    "video_q2.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\driver_fatigue_hazard_1779257042415.png",
+    "video_q3.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\child_crossing_hazard_1779257062215.png",
+    "video_q4.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\angry_passenger_hazard_1779257083677.png",
+    "video_q5.mp4": r"C:\Users\uzmam\.gemini\antigravity\brain\333398ec-fb3c-4e71-bb0c-6ce3f715cf07\heavy_rain_hazard_1779257105034.png",
 }
 
 fps = 30
