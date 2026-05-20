@@ -129,3 +129,15 @@ async def get_latest_result(user_name: str):
         raise HTTPException(status_code=404, detail="No results found for this user")
     doc["_id"] = str(doc["_id"])
     return doc
+
+
+@router.get("/results/history/{user_name}")
+async def get_test_history(user_name: str):
+    """Retrieve all past results for a given user."""
+    db = get_database()
+    cursor = db.results.find({"user_name": user_name}).sort("submitted_at", -1)
+    docs = await cursor.to_list(length=100)
+    for doc in docs:
+        doc["_id"] = str(doc["_id"])
+    return docs
+
