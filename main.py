@@ -9,6 +9,7 @@ from database import connect_to_mongo, close_mongo_connection
 from routes.mcqs import router as mcqs_router
 from routes.evaluation import router as evaluation_router
 from routes.auth import router as auth_router
+from routes.admin import router as admin_router
 import os
 
 
@@ -16,6 +17,10 @@ import os
 async def lifespan(app: FastAPI):
     """Manage startup and shutdown events."""
     await connect_to_mongo()
+    # Ensure static folders are created on startup
+    static_dir = os.path.join(os.path.dirname(__file__), "static")
+    os.makedirs(os.path.join(static_dir, "audio"), exist_ok=True)
+    os.makedirs(os.path.join(static_dir, "uploads"), exist_ok=True)
     yield
     await close_mongo_connection()
 
@@ -45,6 +50,7 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 app.include_router(mcqs_router)
 app.include_router(evaluation_router)
 app.include_router(auth_router)
+app.include_router(admin_router)
 
 
 @app.get("/")
