@@ -321,8 +321,19 @@ def detect_and_normalize_bulk_item(q_data: dict):
         transcript = str(audio_metadata.get("audio_transcript") or "").strip()
         detected_category = "audio" if transcript else "text"
 
+        question_text = str(q_data.get("question_text") or "").strip()
+        stimulus_text = str(q_data.get("stimulus_text") or "").strip()
+        # Listening items get their stimulus delivered via the narrated audio (audio_transcript
+        # already includes it), so the visible question can stay just the question. Reading items
+        # have no audio — the stimulus (sign, message, notice, etc.) is the only context the
+        # question refers to, so it must be shown alongside the question or it's unanswerable.
+        if detected_category == "text" and stimulus_text:
+            question = f"{stimulus_text} {question_text}".strip()
+        else:
+            question = question_text
+
         normalized = {
-            "question": str(q_data.get("question_text") or "").strip(),
+            "question": question,
             "options": [str(o).strip() for o in (q_data.get("options") or [])],
             "correct_answer": str(q_data.get("correct_answer") or "").strip(),
             "difficulty": q_data.get("difficulty") or "Easy",
