@@ -40,6 +40,7 @@ class MCQResponse(BaseModel):
     category: str
     media_url: Optional[str] = None
     audio_url: Optional[str] = None  # narration audio, image category only
+    stimulus_text: Optional[str] = None  # reading passage / sign / message the question refers to
     video_description: Optional[str] = None
     difficulty: Optional[str] = None
     behavioral_category: Optional[str] = None
@@ -76,6 +77,7 @@ class AdminMCQResponse(BaseModel):
     category: str
     media_url: Optional[str] = None
     audio_url: Optional[str] = None  # narration audio, image category only
+    stimulus_text: Optional[str] = None  # reading passage / sign / message the question refers to
     video_description: Optional[str] = None
     difficulty: Optional[str] = None
     behavioral_category: Optional[str] = None

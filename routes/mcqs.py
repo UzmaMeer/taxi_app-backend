@@ -32,6 +32,7 @@ def _format_mcq(doc: dict, fallback_category: str = "") -> dict:
         "category": category,
         "media_url": _normalize_static_url(media_url),
         "audio_url": _normalize_static_url(narration_audio_url),
+        "stimulus_text": doc.get("stimulus_text"),
         "video_description": doc.get("video_description"),
         "difficulty": doc.get("difficulty"),
         "behavioral_category": doc.get("behavioral_category"),
